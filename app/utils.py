@@ -5,7 +5,7 @@ import pandas as pd
 import os
 print("Current working directory:", os.getcwd())
 print("Model path exists:", os.path.exists('../model/scam_detector.pkl'))
-model = joblib.load('../model/scam_detector.pkl')
+model = joblib.load('model/scam_detector.pkl')
 
 def preprocess(df):
     df = df.fillna('')
