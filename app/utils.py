@@ -3,8 +3,8 @@ import pandas as pd
 
 # Load model
 import os
-print("Current working directory:", os.getcwd())
-print("Model path exists:", os.path.exists('../model/scam_detector.pkl'))
+print("Working directory:", os.getcwd())
+print("Model file exists:", os.path.exists('model/scam_detector.pkl'))
 model = joblib.load('model/scam_detector.pkl')
 
 def preprocess(df):
